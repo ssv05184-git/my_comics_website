@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Comics Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- MOBILE HAMBURGER MENU -->
+  <div class="mobile-header">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <h1 class="mobile-title">My Comics</h1>
+  </div>
+
+  <!-- Hidden checkbox controlling the menu -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- MAIN HEADER (Visible on tablet + desktop) -->
+  <header class="header">
+    <h1>Welcome to My Comics</h1>
+    <p>Python • Machine Learning • Funny • Moral</p>
+  </header>
+
+  <!-- NAVIGATION (Used by BOTH mobile + desktop) -->
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="categories/python.html">Python Comics</a>
+    <a href="categories/ml.html">ML Comics</a>
+    <a href="categories/funny.html">Funny Comics</a>
+    <a href="categories/moral.html">Moral Comics</a>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="container">
+
+    <h2>Latest Comics</h2>
+
+    <div class="card-grid">
+
+      <!-- Example PDF Comic Card -->
+      <div class="comic-card">
+        <a href="pdf/python/Python_vol1.pdf" target="_blank">
+          <img src="thumbnails/python/python_vol1.jpg" alt="Python Comic PDF">
+        </a>
+        <p class="caption">Learning Python</p>
+      </div>
+      <div class="comic-card">
+        <a href="pdf/python/Python Intermediate Level.pdf" target="_blank">
+          <img src="thumbnails/python/python_vol2.jpg" alt="Python Comic PDF">
+        </a>
+        <p class="caption">Python Intermediate Level</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/ml/ML_Part1.pdf" target="_blank">
+          <img src="thumbnails/ml/ml_p1.jpg" alt="ML Comic PDF">
+        </a>
+        <p class="caption">Understanding Machine Learning</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/ml/ML_Part2.pdf" target="_blank">
+          <img src="thumbnails/ml/ml_p2.jpg" alt="ML Comic PDF">
+        </a>
+        <p class="caption">Machine Learning Series</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/funny/Sriju and the little forest hero.pdf" target="_blank">
+          <img src="thumbnails/funny/funny_1.jpg" alt="Funny Comic PDF">
+        </a>
+        <p class="caption">Sriju and the little forest hero</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/funny/Sriju's rainy day adventure.pdf" target="_blank">
+          <img src="thumbnails/funny/funny_2.jpg" alt="Funny Comic PDF">
+        </a>
+        <p class="caption">Sriju's rainy day adventure</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/funny/Sriju's_office_life.pdf" target="_blank">
+          <img src="thumbnails/funny/funny_3.jpg" alt="Funny Comic PDF">
+        </a>
+        <p class="caption">Sriju's office life</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/moral/krishna's secret with sriju.pdf" target="_blank">
+          <img src="thumbnails/moral/moral_1.jpg" alt="Moral Comic PDF">
+        </a>
+        <p class="caption">Krishna's secret with Sriju</p>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/moral/When universe needs all the gods.pdf" target="_blank">
+          <img src="thumbnails/moral/moral_2.jpg" alt="Moral Comic PDF">
+        </a>
+        <p class="caption">When universe needs all the gods</p>
+      </div>
+      
+      <div class="comic-card">
+        <a href="pdf/moral/Sriju's story of Humility.pdf" target="_blank">
+          <img src="thumbnails/moral/moral_3.jpg" alt="Moral Comic PDF">
+        </a>
+        <p class="caption">Sriju's story of Humility</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+   <div class="disclaimer-box">
+  <strong>Disclaimer:</strong> These comics were created with the assistance of ChatGPT, and the character “Sriju” was designed using Sora. All stories and visuals are for entertainment and creative exploration.
+</div>
+
+    <p>© 2026 My Comics. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
