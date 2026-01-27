@@ -31,8 +31,13 @@
 
   <!-- MAIN HEADER (Tablet + Desktop Only) -->
   <header class="header">
-    <h1>Adventure Comics</h1>
-    <p>Enjoy adventure comics through simple visual stories!</p>
+    <div class="header-content">
+      <img src="../logo.png" alt="My Comics Logo" class="header-logo">
+      <div class="header-text">
+        <h1>Adventure Comics</h1>
+        <p>Enjoy adventure comics through simple visual stories!</p>
+      </div>
+    </div>
   </header>
 
   <!-- NAVIGATION (Mobile + Desktop Shared) -->
@@ -49,6 +54,19 @@
     
   </nav>
 
+  <!-- Breadcrumb Navigation -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="separator">›</span>
+    <span class="current">Adventure Comics</span>
+  </div>
+
+  <!-- Category Introduction -->
+  <section class="category-intro">
+    <h2>🌍 Adventure Comics</h2>
+    <p>Follow Sriju through enchanting adventures in magical forests, rainy day escapades, and heartwarming surprises. Stories perfect for all ages that spark imagination.</p>
+  </section>
+
   <!-- PAGE CONTENT -->
   <main class="container">
 
@@ -61,6 +79,27 @@
           <img src="../thumbnails/adventure/adv_1.jpg" alt="Funny Comic PDF">
         </a>
         <p class="caption">Sriju and the little forest hero</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-Beginner">Beginner</span>
+          <span class="tag category-Adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
@@ -68,6 +107,27 @@
           <img src="../thumbnails/adventure/adv_2.jpg" alt="Funny Comic PDF">
         </a>
         <p class="caption">Sriju's rainy day adventure</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-Beginner">Beginner</span>
+          <span class="tag category-Adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
@@ -75,6 +135,27 @@
           <img src="../thumbnails/adventure/adv_3.jpg" alt="Funny Comic PDF">
         </a>
         <p class="caption">Sriju and the whispering Forest</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-Beginner">Beginner</span>
+          <span class="tag category-Adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
     
       <div class="comic-card">
@@ -82,9 +163,39 @@
           <img src="../thumbnails/adventure/adv_4.jpg" alt="Funny Comic PDF">
         </a>
         <p class="caption">Sriju's Handmade Surprise</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-Beginner">Beginner</span>
+          <span class="tag category-Adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_4">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_4" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_4" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
     </div>
+
+    <!-- RELATED COMICS SECTION -->
+    <section class="related-comics-section">
+      <h2>You Might Like</h2>
+      <p class="section-subtitle">Explore more Adventure comics</p>
+      <div class="related-comics-grid">
+        <!-- This will be populated by JavaScript -->
+      </div>
+    </section>
 
   </main>
 
@@ -94,6 +205,197 @@
 </div>
     <p>© 2026 My Comics</p>
   </footer>
+
+  <script>
+    // ===== RATINGS SYSTEM =====
+    const stars = document.querySelectorAll('.stars');
+    
+    stars.forEach(starGroup => {
+      const starElements = starGroup.querySelectorAll('.star');
+      const comicId = starGroup.getAttribute('data-comic');
+      const ratingCount = starGroup.parentElement.querySelector('.rating-count');
+      
+      // Load saved rating
+      const savedRating = localStorage.getItem(`rating-${comicId}`);
+      if (savedRating) {
+        starElements.forEach(star => {
+          if (parseInt(star.getAttribute('data-rating')) <= parseInt(savedRating)) {
+            star.classList.add('active');
+          }
+        });
+      }
+      
+      starElements.forEach(star => {
+        star.addEventListener('click', function() {
+          const rating = this.getAttribute('data-rating');
+          localStorage.setItem(`rating-${comicId}`, rating);
+          
+          starElements.forEach(s => s.classList.remove('active'));
+          starElements.forEach(s => {
+            if (parseInt(s.getAttribute('data-rating')) <= parseInt(rating)) {
+              s.classList.add('active');
+            }
+          });
+          
+          // Increment count
+          const currentCount = parseInt(ratingCount.textContent.match(/\d+/)[0]);
+          ratingCount.textContent = `(${currentCount + 1})`;
+        });
+        
+        star.addEventListener('mouseover', function() {
+          const hoverRating = this.getAttribute('data-rating');
+          starElements.forEach(s => {
+            if (parseInt(s.getAttribute('data-rating')) <= parseInt(hoverRating)) {
+              s.style.color = '#ffdd33';
+            } else {
+              s.style.color = '#ddd';
+            }
+          });
+        });
+      });
+      
+      starGroup.addEventListener('mouseout', function() {
+        starElements.forEach(s => {
+          if (s.classList.contains('active')) {
+            s.style.color = '#ffdd33';
+          } else {
+            s.style.color = '#ddd';
+          }
+        });
+      });
+    });
+
+    // ===== FAVORITE FEATURE =====
+    const favoriteButtons = document.querySelectorAll('.btn-favorite');
+    
+    favoriteButtons.forEach(btn => {
+      const comicId = btn.getAttribute('data-comic');
+      
+      // Check if comic is already favorited
+      const isFavorited = localStorage.getItem(`favorite-${comicId}`);
+      if (isFavorited) {
+        btn.classList.add('liked');
+        btn.textContent = '♥';
+      }
+      
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const comicId = this.getAttribute('data-comic');
+        const isFavorited = localStorage.getItem(`favorite-${comicId}`);
+        
+        if (isFavorited) {
+          localStorage.removeItem(`favorite-${comicId}`);
+          this.classList.remove('liked');
+          this.textContent = '♡';
+        } else {
+          localStorage.setItem(`favorite-${comicId}`, true);
+          this.classList.add('liked');
+          this.textContent = '♥';
+        }
+      });
+    });
+
+    // ===== SOCIAL SHARING =====
+    const shareButtons = document.querySelectorAll('.btn-share');
+    
+    shareButtons.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const comicId = this.getAttribute('data-comic');
+        const caption = this.closest('.comic-card').querySelector('.caption').textContent;
+        
+        const shareUrl = window.location.href;
+        const shareText = `Check out this amazing comic: ${caption} on Sriju's Comics Universe!`;
+        
+        // Social media share URLs
+        const shareLinks = {
+          twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`,
+          facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+          whatsapp: `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`,
+          linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+          pinterest: `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(caption)}`
+        };
+        
+        // Create a simple share menu
+        const menu = document.createElement('div');
+        menu.style.cssText = `
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          border: 3px solid #4a90e2;
+          border-radius: 8px;
+          padding: 20px;
+          z-index: 1000;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+          min-width: 250px;
+        `;
+        
+        menu.innerHTML = `
+          <h3 style="margin-top: 0; color: #4a90e2; font-family: 'Righteous', sans-serif;">Share This Comic</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="${shareLinks.twitter}" target="_blank" style="padding: 10px; background: #1DA1F2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on Twitter</a>
+            <a href="${shareLinks.facebook}" target="_blank" style="padding: 10px; background: #1877F2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on Facebook</a>
+            <a href="${shareLinks.whatsapp}" target="_blank" style="padding: 10px; background: #25D366; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on WhatsApp</a>
+            <a href="${shareLinks.linkedin}" target="_blank" style="padding: 10px; background: #0A66C2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on LinkedIn</a>
+            <button onclick="this.parentElement.parentElement.remove()" style="padding: 10px; background: #ddd; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Close</button>
+          </div>
+        `;
+        
+        document.body.appendChild(menu);
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function closeMenu(e) {
+          if (!menu.contains(e.target) && e.target !== btn) {
+            menu.remove();
+            document.removeEventListener('click', closeMenu);
+          }
+        });
+      });
+    });
+
+    // ===== LAZY LOADING =====
+    // Add loading="lazy" attribute to all images if not already present
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+
+    // ===== RELATED COMICS =====
+    const allComics = [
+      { id: 'adv_1', title: 'Sriju Quest for the Lost Code', img: '../thumbnails/adventure/adv_1.jpg', pdf: '../pdf/adventure/Sriju Quest for the Lost Code.pdf', difficulty: 'Intermediate', category: 'Adventure' },
+      { id: 'adv_2', title: 'The Dragon of the Server Room', img: '../thumbnails/adventure/adv_2.jpg', pdf: '../pdf/adventure/The Dragon of the Server Room.pdf', difficulty: 'Beginner', category: 'Adventure' },
+      { id: 'adv_3', title: 'Sriju and the Cloud Kingdom', img: '../thumbnails/adventure/adv_3.jpg', pdf: '../pdf/adventure/Sriju and the Cloud Kingdom.pdf', difficulty: 'Intermediate', category: 'Adventure' }
+    ];
+
+    const relatedGrid = document.querySelector('.related-comics-grid');
+    const currentComics = new Set();
+    document.querySelectorAll('.comic-card').forEach(card => {
+      const caption = card.querySelector('.caption').textContent;
+      currentComics.add(caption);
+    });
+
+    // Show available comics (excluding already displayed ones)
+    const availableComics = allComics.filter(comic => !currentComics.has(comic.title));
+    const relatedComics = availableComics.sort(() => Math.random() - 0.5).slice(0, 3);
+
+    relatedComics.forEach(comic => {
+      const card = document.createElement('div');
+      card.className = 'related-comic-card';
+      card.innerHTML = `
+        <a href="${comic.pdf}" target="_blank">
+          <img src="${comic.img}" alt="${comic.title}" loading="lazy">
+        </a>
+        <div class="related-comic-info">
+          <p>${comic.title}</p>
+          <span class="tag difficulty-${comic.difficulty}">${comic.difficulty}</span>
+        </div>
+      `;
+      relatedGrid.appendChild(card);
+    });
+  </script>
 
 </body>
 </html>

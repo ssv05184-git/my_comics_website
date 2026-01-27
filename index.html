@@ -38,13 +38,19 @@
 
   <!-- MAIN HEADER (Visible on tablet + desktop) -->
   <header class="header">
-    <h1>Welcome to Sriju's Comics Universe</h1>
-    <p>Python • Machine Learning • LLM • Moral • Adventure • Mysteries • Humorous • Culture</p>
+    <div class="header-content">
+      <img loading="lazy" src="logo.png" alt="My Comics Logo" class="header-logo">
+      <div class="header-text">
+        <h1>Welcome to Sriju's Comics Universe</h1>
+        <p class="tagline">✨ Curiosity Lives Here ✨</p>
+      </div>
+    </div>
   </header>
 
   <!-- NAVIGATION (Used by BOTH mobile + desktop) -->
   <nav class="navbar">
     <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
     <a href="categories/python.html">Python</a>
     <a href="categories/ml.html">ML</a>
     <a href="categories/llm.html">LLM</a>
@@ -59,223 +65,1631 @@
   <!-- Main Section -->
   <main class="container">
 
+    <!-- Hero Section: Editor's Pick -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <a href="pdf/python/Python_vol1.pdf" target="_blank">
+            <img loading="lazy" src="thumbnails/python/python_vol1.jpg" alt="Editor's Pick: Learning Python">
+          </a>
+        </div>
+        <div class="hero-text">
+          <div class="editor-badge">🌟 Editor's Pick</div>
+          <h2>Learning Python</h2>
+          <p class="hero-description">Start your programming journey with Sriju! This beginner-friendly introduction to Python covers the fundamentals and sets the foundation for your coding adventure.</p>
+          <div class="hero-metadata">
+            <span class="meta-item difficulty">Beginner</span>
+            <span class="meta-item category">Python</span>
+            <span class="meta-item date">Jan 2026</span>
+          </div>
+          <a href="pdf/python/Python_vol1.pdf" target="_blank" class="hero-cta">Read This Comic →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-section">
+      <input type="text" id="searchInput" class="search-bar" placeholder="🔍 Search comics by title...">
+    </div>
+
+    <!-- Filter/Sort Options -->
+    <div class="filter-section">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="latest">Latest</button>
+      <button class="filter-btn" data-filter="featured">Featured</button>
+    </div>
+
     <h2>Latest Comics</h2>
+
+    <p style="text-align: center; color: #666; margin-bottom: 20px; font-style: italic;">
+      Explore our newest stories and jump into Sriju's world. Every comic is crafted to make you smile, think, and learn.
+    </p>
 
     <div class="card-grid">
 
       <!-- Example PDF Comic Card -->
       <div class="comic-card">
         <a href="pdf/python/Python_vol1.pdf" target="_blank">
-          <img src="thumbnails/python/python_vol1.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_vol1.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Learning Python</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_vol1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_vol1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_vol1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/python/Python Intermediate Level.pdf" target="_blank">
-          <img src="thumbnails/python/python_vol2.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_vol2.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Python Intermediate Level</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_vol2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_vol2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_vol2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/python/Sriju Learns Time and System Magic with Python.pdf" target="_blank">
-          <img src="thumbnails/python/python_lib_1.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_lib_1.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Python Library Magic: sys & datetime</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_lib_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_lib_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_lib_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/python/Python lib  os module.pdf" target="_blank">
-          <img src="thumbnails/python/python_lib_2.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_lib_2.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Python Library Magic: os</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_lib_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_lib_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_lib_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/python/Sriju adventure in Memory City.pdf" target="_blank">
-          <img src="thumbnails/python/python_c_1.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_c_1.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Sriju adventure in Memory City</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_c_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_c_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_c_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/python/Sriju in Data Structures Land.pdf" target="_blank">
-          <img src="thumbnails/python/python_c_2.jpg" alt="Python Comic PDF">
+          <img loading="lazy" src="thumbnails/python/python_c_2.jpg" alt="Python Comic PDF">
         </a>
         <p class="caption">Sriju in Data Structures Land</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-advanced">Advanced</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_c_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_c_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_c_2" title="Share comic">↗</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/python/Sriju and the Talking Trees of CodeLand.pdf" target="_blank">
+          <img loading="lazy" src="thumbnails/python/python_c_3.jpg" alt="Python Comic PDF">
+        </a>
+        <p class="caption">Sriju and the Talking Trees of CodeLand</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-python">Python</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="python_c_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="python_c_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="python_c_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/ml/ML_Part1.pdf" target="_blank">
-          <img src="thumbnails/ml/ml_p1.jpg" alt="ML Comic PDF">
+          <img loading="lazy" src="thumbnails/ml/ml_p1.jpg" alt="ML Comic PDF">
         </a>
         <p class="caption">Understanding Machine Learning</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-ml">ML</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="ml_part1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="ml_part1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="ml_part1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/ml/ML_Part2.pdf" target="_blank">
-          <img src="thumbnails/ml/ml_p2.jpg" alt="ML Comic PDF">
+          <img loading="lazy" src="thumbnails/ml/ml_p2.jpg" alt="ML Comic PDF">
         </a>
         <p class="caption">Machine Learning Series</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-advanced">Advanced</span>
+          <span class="tag category-ml">ML</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="ml_part2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="ml_part2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="ml_part2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/LLM/Prompt Engineering.pdf" target="_blank">
-          <img src="thumbnails/LLM/llm_1.jpg" alt="LLM Comic PDF">
+          <img loading="lazy" src="thumbnails/LLM/llm_1.jpg" alt="LLM Comic PDF">
         </a>
         <p class="caption">The Magic of Prompts</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-llm">LLM</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="llm_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="llm_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="llm_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
       <div class="comic-card">
         <a href="pdf/LLM/llm.pdf" target="_blank">
-          <img src="thumbnails/LLM/llm_2.jpg" alt="LLM Comic PDF">
+          <img loading="lazy" src="thumbnails/LLM/llm_2.jpg" alt="LLM Comic PDF">
         </a>
         <p class="caption">The Magic of Large language models</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-llm">LLM</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="llm_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="llm_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="llm_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/moral/krishna's secret with sriju.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_1.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_1.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">Krishna's secret with Sriju</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/moral/When universe needs all the gods.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_2.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_2.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">When universe needs all the gods</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
       
       <div class="comic-card">
         <a href="pdf/moral/Sriju's story of Humility.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_3.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_3.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">Sriju's story of Humility</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/moral/The Adventure of Curiosity & Knowledge.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_4.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_4.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">The Adventure of Curiosity & Knowledge</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_4">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_4" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_4" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/moral/Sriju and the Miracle of sharing.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_5.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_5.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">Sriju and the Miracle of sharing</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_5">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_5" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_5" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/moral/Sriju Learns the Power of Unity.pdf" target="_blank">
-          <img src="thumbnails/moral/moral_6.jpg" alt="Moral Comic PDF">
+          <img loading="lazy" src="thumbnails/moral/moral_6.jpg" alt="Moral Comic PDF">
         </a>
         <p class="caption">Sriju Learns the Power of Unity</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-moral">Moral</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="moral_6">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="moral_6" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="moral_6" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/adventure/Sriju and the little forest hero.pdf" target="_blank">
-          <img src="thumbnails/adventure/adv_1.jpg" alt="Adventure Comic PDF">
+          <img loading="lazy" src="thumbnails/adventure/adv_1.jpg" alt="Adventure Comic PDF">
         </a>
         <p class="caption">Sriju and the little forest hero</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/adventure/Sriju's rainy day adventure.pdf" target="_blank">
-          <img src="thumbnails/adventure/adv_2.jpg" alt="Adventure Comic PDF">
+          <img loading="lazy" src="thumbnails/adventure/adv_2.jpg" alt="Adventure Comic PDF">
         </a>
         <p class="caption">Sriju's rainy day adventure</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/adventure/Sriju and the whispering Forest.pdf" target="_blank">
-          <img src="thumbnails/adventure/adv_3.jpg" alt="Adventure Comic PDF">
+          <img loading="lazy" src="thumbnails/adventure/adv_3.jpg" alt="Adventure Comic PDF">
         </a>
         <p class="caption">Sriju and the whispering Forest</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/adventure/Sriju's Handmade Surprise.pdf" target="_blank">
-          <img src="thumbnails/adventure/adv_4.jpg" alt="Adventure Comic PDF">
+          <img loading="lazy" src="thumbnails/adventure/adv_4.jpg" alt="Adventure Comic PDF">
         </a>
         <p class="caption">Sriju's Handmade Surprise</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-adventure">Adventure</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="adv_4">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="adv_4" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="adv_4" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/mysteries/Detective Sriju Missing Necklace.pdf" target="_blank">
-          <img src="thumbnails/mysteries/myst_1.jpg" alt="Mystery Comic PDF">
+          <img loading="lazy" src="thumbnails/mysteries/myst_1.jpg" alt="Mystery Comic PDF">
         </a>
         <p class="caption">Detective Sriju : Missing Necklace</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-mysteries">Mystery</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="myst_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="myst_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="myst_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/mysteries/Detective Sriju - robot memory missing.pdf" target="_blank">
-          <img src="thumbnails/mysteries/myst_2.jpg" alt="Mystery Comic PDF">
+          <img loading="lazy" src="thumbnails/mysteries/myst_2.jpg" alt="Mystery Comic PDF">
         </a>
         <p class="caption">Detective Sriju : Robot Memory Missing</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-mysteries">Mystery</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="myst_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="myst_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="myst_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/mysteries/Sriju and the mystery of the missing rings.pdf" target="_blank">
-          <img src="thumbnails/mysteries/myst_3.jpg" alt="Mystery Comic PDF">
+          <img loading="lazy" src="thumbnails/mysteries/myst_3.jpg" alt="Mystery Comic PDF">
         </a>
         <p class="caption">Sriju and the mystery of the missing rings</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-intermediate">Intermediate</span>
+          <span class="tag category-mysteries">Mystery</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="myst_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="myst_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="myst_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       
 
       <div class="comic-card">
         <a href="pdf/funny/Sriju's office life.pdf" target="_blank">
-          <img src="thumbnails/funny/funny_1.jpg" alt="Funny Comic PDF">
+          <img loading="lazy" src="thumbnails/funny/funny_1.jpg" alt="Funny Comic PDF">
         </a>
         <p class="caption">Sriju's office life</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-funny">Humor</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="funny_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="funny_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="funny_1" title="Share comic">↗</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comic-card">
+        <a href="pdf/funny/No Shortcuts A Sriju and Bot Story.pdf" target="_blank">
+          <img loading="lazy" src="thumbnails/funny/funny_2.jpg" alt="Funny Comic PDF">
+        </a>
+        <p class="caption">No Shortcuts A Sriju and Bot Story</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-funny">Humor</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="funny_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="funny_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="funny_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/culture/Sriju exploring indian classical dances.pdf" target="_blank">
-          <img src="thumbnails/culture/culture_1.jpg" alt="Culture Comic PDF">
+          <img loading="lazy" src="thumbnails/culture/culture_1.jpg" alt="Culture Comic PDF">
         </a>
         <p class="caption">Sriju exploring Indian classical dances</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-culture">Culture</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="culture_1">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="culture_1" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="culture_1" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
       <div class="comic-card">
         <a href="pdf/culture/Sriju exploring regional dances of India .pdf" target="_blank">
-          <img src="thumbnails/culture/culture_2.jpg" alt="Culture Comic PDF">
+          <img loading="lazy" src="thumbnails/culture/culture_2.jpg" alt="Culture Comic PDF">
         </a>
         <p class="caption">Sriju exploring regional dances of India</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-culture">Culture</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="culture_2">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="culture_2" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="culture_2" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/culture/Sriju & Magical Spice Friends of India.pdf" target="_blank">
-          <img src="thumbnails/culture/culture_3.jpg" alt="Culture Comic PDF">
+          <img loading="lazy" src="thumbnails/culture/culture_3.jpg" alt="Culture Comic PDF">
         </a>
         <p class="caption">Sriju & Magical Spice Friends of India</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-culture">Culture</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="culture_3">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="culture_3" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="culture_3" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/culture/Sriju's Magic Mirror - Regional Costumes of India.pdf" target="_blank">
-          <img src="thumbnails/culture/culture_4.jpg" alt="Culture Comic PDF">
+          <img loading="lazy" src="thumbnails/culture/culture_4.jpg" alt="Culture Comic PDF">
         </a>
         <p class="caption">Sriju's Magic Mirror - Regional Costumes of India</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-culture">Culture</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="culture_4">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="culture_4" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="culture_4" title="Share comic">↗</button>
+          </div>
+        </div>
       </div>
 
       <div class="comic-card">
         <a href="pdf/culture/Sriju's Culinary Quest - Regional Delicacies.pdf" target="_blank">
-          <img src="thumbnails/culture/culture_5.jpg" alt="Culture Comic PDF">
+          <img loading="lazy" src="thumbnails/culture/culture_5.jpg" alt="Culture Comic PDF">
         </a>
         <p class="caption">Sriju's Culinary Quest - Regional Delicacies</p>
+        <div class="comic-metadata">
+          <span class="tag difficulty-beginner">Beginner</span>
+          <span class="tag category-culture">Culture</span>
+          <span class="date">Jan 2026</span>
+        </div>
+        <div class="comic-interactions">
+          <div class="rating-section">
+            <div class="stars" data-comic="culture_5">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-count">(0)</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-favorite" data-comic="culture_5" title="Add to favorites">♡</button>
+            <button class="btn-share" data-comic="culture_5" title="Share comic">↗</button>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </main>
 
-  <footer class="footer">
+  <!-- COMING SOON SECTION - SEPARATE PROMINENT DISPLAY -->
+  <section class="coming-soon-showcase">
+    <div class="coming-soon-header">
+      <h2 class="coming-soon-title">🎬 Exciting Comics Coming Soon!</h2>
+      <p class="coming-soon-subtitle">Get ready for more amazing stories. Notify me when they arrive! ✨</p>
+    </div>
+    
+    <div class="coming-soon-grid">
+      <div class="coming-soon-card">
+        <div class="coming-soon-placeholder">
+          <p>?</p>
+        </div>
+        <h3>Sriju's AI Journey</h3>
+        <p class="coming-soon-desc">Exploring the world of Artificial Intelligence with Sriju</p>
+        <p class="coming-soon-date">📅 Coming Feb 2026</p>
+        <button class="btn-notify">Notify Me</button>
+      </div>
+      
+      <div class="coming-soon-card">
+        <div class="coming-soon-placeholder">
+          <p>?</p>
+        </div>
+        <h3>Web Development Adventures</h3>
+        <p class="coming-soon-desc">Sriju learns HTML, CSS, and JavaScript through interactive comics</p>
+        <p class="coming-soon-date">📅 Coming Mar 2026</p>
+        <button class="btn-notify">Notify Me</button>
+      </div>
+      
+      <div class="coming-soon-card">
+        <div class="coming-soon-placeholder">
+          <p>?</p>
+        </div>
+        <h3>Data Science Quest</h3>
+        <p class="coming-soon-desc">Sriju discovers the power of data analysis and visualization</p>
+        <p class="coming-soon-date">📅 Coming Apr 2026</p>
+        <button class="btn-notify">Notify Me</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">    <img loading="lazy" src="logo.png" alt="My Comics Logo" class="footer-logo">
+    
+    <!-- Newsletter Signup -->
+    <div class="newsletter-section">
+      <h3>📬 Stay Updated</h3>
+      <p>Subscribe to get notified about new comics and exclusive content</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required class="newsletter-input">
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+      <div class="newsletter-message" id="newsletterMessage"></div>
+    </div>
+
+    <!-- Footer Links & Social Media -->
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sriju.universe/" target="_blank" title="Follow on Instagram">📷 Instagram</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#" class="contact-trigger">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="privacy-trigger">Privacy Policy</a></li>
+          <li><a href="#" class="terms-trigger">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div class="disclaimer-box">
       <strong>Disclaimer:</strong> These comics were created with the assistance of ChatGPT, and the character “Sriju” was designed using Sora. All stories and visuals are for entertainment and creative exploration.
     </div>
 
-    <p>© 2026 My Comics. All rights reserved.</p>
+    <p>© 2026 My Comics. All rights reserved. | Made with ❤️ for comic lovers</p>
   </footer>
+
+  <!-- Contact Form Modal -->
+  <div id="contactFormModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2>Get In Touch</h2>
+      <p>Have suggestions or feedback? We'd love to hear from you!</p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required class="form-input">
+        <input type="email" placeholder="Your Email" required class="form-input">
+        <textarea placeholder="Your Message or Suggestion..." rows="5" required class="form-input"></textarea>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+      <div id="contactMessage" class="contact-message"></div>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2>Privacy Policy</h2>
+      <div class="modal-body">
+        <h3>Data Collection</h3>
+        <p>We collect minimal data including emails for newsletter signups and ratings stored locally in your browser.</p>
+        
+        <h3>Data Storage</h3>
+        <p>Most data is stored locally in your browser using localStorage. Email addresses are not shared with third parties.</p>
+        
+        <h3>Your Rights</h3>
+        <p>You can clear your browser data at any time to remove saved ratings and favorites.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div id="termsModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2>Terms of Service</h2>
+      <div class="modal-body">
+        <h3>Use License</h3>
+        <p>You are granted a limited license to view and enjoy the comics on this website for personal, non-commercial use.</p>
+        
+        <h3>Content Rights</h3>
+        <p>All comics, character designs, and content are the intellectual property of My Comics and protected by copyright.</p>
+        
+        <h3>User Conduct</h3>
+        <p>Users agree to use this website responsibly and not to reproduce, distribute, or modify content without permission.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Back to top">↑</button>
+
+  <!-- Developer Tools (Hidden) -->
+  <div id="devTools" class="dev-tools hidden">
+    <button id="closeDevTools" class="dev-tools-close">&times;</button>
+    <h3>📊 Developer Analytics</h3>
+    <div class="dev-tools-content">
+      <button id="exportRatings" class="export-btn">📥 Export Ratings</button>
+      <button id="exportContacts" class="export-btn">📥 Export Contact Messages</button>
+      <button id="exportSubscribers" class="export-btn">📥 Export Newsletter Subscribers</button>
+      <p class="dev-info" id="devInfo">All data is stored in browser localStorage</p>
+    </div>
+  </div>
+
+  <!-- Hidden dev tools toggle (Press Ctrl+Shift+D) -->
+  <div id="devToolsToggle" style="display: none;"></div>
+
+  <!-- EmailJS Library for Email Notifications -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS - Get credentials from EmailJS dashboard
+    (function(){
+      emailjs.init({
+        publicKey: "WchbmTtxyDlNbn8XF"
+      });
+    })();
+  </script>
+
+  <!-- Search and Filter Script -->
+  <script>
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const comicCards = document.querySelectorAll('.comic-card');
+
+    searchInput.addEventListener('keyup', function() {
+      const searchTerm = this.value.toLowerCase();
+      
+      comicCards.forEach(card => {
+        const caption = card.querySelector('.caption').textContent.toLowerCase();
+        if (caption.includes(searchTerm)) {
+          card.style.display = '';
+          card.classList.add('fade-in');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const latestComics = Array.from(comicCards).slice(0, 9); // First 9 as "latest"
+    const featuredComics = [0, 4, 8, 12, 16, 20]; // Featured indices
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        comicCards.forEach((card, index) => {
+          card.style.display = '';
+          
+          if (filter === 'latest') {
+            card.style.display = latestComics.includes(card) ? '' : 'none';
+          } else if (filter === 'featured') {
+            card.style.display = featuredComics.includes(index) ? '' : 'none';
+          }
+        });
+      });
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // ===== RATINGS SYSTEM =====
+    const stars = document.querySelectorAll('.stars');
+    
+    stars.forEach(starGroup => {
+      const starElements = starGroup.querySelectorAll('.star');
+      const comicId = starGroup.getAttribute('data-comic');
+      const ratingCount = starGroup.parentElement.querySelector('.rating-count');
+      
+      // Load saved rating
+      const savedRating = localStorage.getItem(`rating-${comicId}`);
+      if (savedRating) {
+        starElements.forEach(star => {
+          if (parseInt(star.getAttribute('data-rating')) <= parseInt(savedRating)) {
+            star.classList.add('active');
+          }
+        });
+      }
+      
+      starElements.forEach(star => {
+        star.addEventListener('click', function() {
+          const rating = this.getAttribute('data-rating');
+          localStorage.setItem(`rating-${comicId}`, rating);
+          
+          starElements.forEach(s => s.classList.remove('active'));
+          starElements.forEach(s => {
+            if (parseInt(s.getAttribute('data-rating')) <= parseInt(rating)) {
+              s.classList.add('active');
+            }
+          });
+          
+          // Increment count
+          const currentCount = parseInt(ratingCount.textContent.match(/\d+/)[0]);
+          ratingCount.textContent = `(${currentCount + 1})`;
+          
+          // Send email notification about new rating
+          emailjs.send('service_comics', 'template_rating', {
+            to_email: 'srijuvenkat1495@gmail.com',
+            comic_id: comicId,
+            rating: rating,
+            total_ratings: currentCount + 1,
+            timestamp: new Date().toLocaleString('en-US')
+          }).then(
+            response => console.log('Rating email sent!', response),
+            error => console.log('Rating email error:', error)
+          );
+        });
+        
+        star.addEventListener('mouseover', function() {
+          const hoverRating = this.getAttribute('data-rating');
+          starElements.forEach(s => {
+            if (parseInt(s.getAttribute('data-rating')) <= parseInt(hoverRating)) {
+              s.style.color = '#ffdd33';
+            } else {
+              s.style.color = '#ddd';
+            }
+          });
+        });
+      });
+      
+      starGroup.addEventListener('mouseout', function() {
+        starElements.forEach(s => {
+          if (s.classList.contains('active')) {
+            s.style.color = '#ffdd33';
+          } else {
+            s.style.color = '#ddd';
+          }
+        });
+      });
+    });
+
+    // ===== FAVORITE FEATURE =====
+    const favoriteButtons = document.querySelectorAll('.btn-favorite');
+    
+    favoriteButtons.forEach(btn => {
+      const comicId = btn.getAttribute('data-comic');
+      
+      // Check if comic is already favorited
+      const isFavorited = localStorage.getItem(`favorite-${comicId}`);
+      if (isFavorited) {
+        btn.classList.add('liked');
+        btn.textContent = '♥';
+      }
+      
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const comicId = this.getAttribute('data-comic');
+        const isFavorited = localStorage.getItem(`favorite-${comicId}`);
+        
+        if (isFavorited) {
+          localStorage.removeItem(`favorite-${comicId}`);
+          this.classList.remove('liked');
+          this.textContent = '♡';
+        } else {
+          localStorage.setItem(`favorite-${comicId}`, true);
+          this.classList.add('liked');
+          this.textContent = '♥';
+        }
+      });
+    });
+
+    // ===== SOCIAL SHARING =====
+    const shareButtons = document.querySelectorAll('.btn-share');
+    
+    shareButtons.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const comicId = this.getAttribute('data-comic');
+        const caption = this.closest('.comic-card').querySelector('.caption').textContent;
+        
+        const shareUrl = window.location.href;
+        const shareText = `Check out this amazing comic: ${caption} on Sriju's Comics Universe!`;
+        
+        // Social media share URLs
+        const shareLinks = {
+          twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`,
+          facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+          whatsapp: `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`,
+          linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+          pinterest: `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(caption)}`
+        };
+        
+        // Create a simple share menu
+        const menu = document.createElement('div');
+        menu.style.cssText = `
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          border: 3px solid #4a90e2;
+          border-radius: 8px;
+          padding: 20px;
+          z-index: 1000;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+          min-width: 250px;
+        `;
+        
+        menu.innerHTML = `
+          <h3 style="margin-top: 0; color: #4a90e2; font-family: 'Righteous', sans-serif;">Share This Comic</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="${shareLinks.twitter}" target="_blank" style="padding: 10px; background: #1DA1F2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on Twitter</a>
+            <a href="${shareLinks.facebook}" target="_blank" style="padding: 10px; background: #1877F2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on Facebook</a>
+            <a href="${shareLinks.whatsapp}" target="_blank" style="padding: 10px; background: #25D366; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on WhatsApp</a>
+            <a href="${shareLinks.linkedin}" target="_blank" style="padding: 10px; background: #0A66C2; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold;">Share on LinkedIn</a>
+            <button onclick="this.parentElement.parentElement.remove()" style="padding: 10px; background: #ddd; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Close</button>
+          </div>
+        `;
+        
+        document.body.appendChild(menu);
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function closeMenu(e) {
+          if (!menu.contains(e.target) && e.target !== btn) {
+            menu.remove();
+            document.removeEventListener('click', closeMenu);
+          }
+        });
+      });
+    });
+
+    // ===== NEWSLETTER SIGNUP =====
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const emailInput = this.querySelector('.newsletter-input');
+        const messageDiv = document.getElementById('newsletterMessage');
+        const email = emailInput.value.trim();
+        
+        // Simple email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!emailRegex.test(email)) {
+          messageDiv.className = 'newsletter-message error';
+          messageDiv.textContent = '❌ Please enter a valid email address';
+          return;
+        }
+        
+        // Save email to localStorage (in a real app, this would go to a server)
+        const subscribers = JSON.parse(localStorage.getItem('newsletter-subscribers') || '[]');
+        if (!subscribers.includes(email)) {
+          subscribers.push(email);
+          localStorage.setItem('newsletter-subscribers', JSON.stringify(subscribers));
+        }
+        
+        messageDiv.className = 'newsletter-message success';
+        messageDiv.textContent = '✅ Thanks for subscribing! You\'ll be notified of new comics.';
+        
+        // Send email notification about new subscription
+        emailjs.send('service_comics', 'template_newsletter', {
+          to_email: 'srijuvenkat1495@gmail.com',
+          subscriber_email: email,
+          timestamp: new Date().toLocaleString('en-US'),
+          message: 'New newsletter subscriber!'
+        }).then(
+          response => console.log('Newsletter email sent!', response),
+          error => console.log('Newsletter email error:', error)
+        );
+        
+        emailInput.value = '';
+        
+        // Clear message after 5 seconds
+        setTimeout(() => {
+          messageDiv.textContent = '';
+          messageDiv.className = 'newsletter-message';
+        }, 5000);
+      });
+    }
+
+    // ===== LAZY LOADING =====
+    // Add loading="lazy" attribute to all images if not already present
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+
+    // ===== COMING SOON NOTIFY =====
+    const notifyButtons = document.querySelectorAll('.btn-notify');
+    notifyButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const comicTitle = this.parentElement.querySelector('h3').textContent;
+        alert(`You'll be notified when "${comicTitle}" is released! 🎉`);
+        this.textContent = '✓ Notified';
+        this.disabled = true;
+        this.style.opacity = '0.6';
+        this.style.cursor = 'not-allowed';
+      });
+    });
+
+    // ===== MODAL HANDLING =====
+    const modals = {
+      contact: document.getElementById('contactFormModal'),
+      privacy: document.getElementById('privacyModal'),
+      terms: document.getElementById('termsModal')
+    };
+
+    // Open modals
+    document.querySelectorAll('.contact-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        modals.contact.classList.remove('hidden');
+      });
+    });
+
+    document.querySelectorAll('.privacy-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        modals.privacy.classList.remove('hidden');
+      });
+    });
+
+    document.querySelectorAll('.terms-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        modals.terms.classList.remove('hidden');
+      });
+    });
+
+    // Close modals
+    function closeModal(modal) {
+      modal.classList.add('hidden');
+    }
+
+    Object.values(modals).forEach(modal => {
+      modal.querySelector('.modal-close').addEventListener('click', () => {
+        closeModal(modal);
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = this.querySelector('input[type="text"]').value;
+      const email = this.querySelector('input[type="email"]').value;
+      const message = this.querySelector('textarea').value;
+      
+      // Store in localStorage
+      let contacts = JSON.parse(localStorage.getItem('contactMessages')) || [];
+      contacts.push({
+        name,
+        email,
+        message,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('contactMessages', JSON.stringify(contacts));
+      
+      // Send email notification about new contact message
+      emailjs.send('service_comics', 'template_contact', {
+        to_email: 'srijuvenkat1495@gmail.com',
+        from_name: name,
+        from_email: email,
+        message: message,
+        timestamp: new Date().toLocaleString('en-US')
+      }).then(
+        response => console.log('Contact email sent!', response),
+        error => console.log('Contact email error:', error)
+      );
+      
+      // Show success message
+      const messageDiv = document.getElementById('contactMessage');
+      messageDiv.textContent = '✓ Message sent successfully! Thank you for reaching out.';
+      messageDiv.className = 'contact-message success';
+      
+      // Reset form
+      this.reset();
+      
+      // Close modal after 2 seconds
+      setTimeout(() => {
+        closeModal(modals.contact);
+        messageDiv.textContent = '';
+        messageDiv.className = 'contact-message';
+      }, 2000);
+    });
+
+    // ===== DEVELOPER TOOLS =====
+    // Keyboard shortcut: Ctrl+Shift+D to toggle developer tools
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && e.shiftKey && e.key === 'D') {
+        e.preventDefault();
+        const devTools = document.getElementById('devTools');
+        devTools.classList.toggle('hidden');
+      }
+    });
+
+    // Close dev tools
+    document.getElementById('closeDevTools').addEventListener('click', function() {
+      document.getElementById('devTools').classList.add('hidden');
+    });
+
+    // Export Ratings Function
+    document.getElementById('exportRatings').addEventListener('click', function() {
+      const ratings = {};
+      
+      // Collect all ratings from localStorage
+      for (let key in localStorage) {
+        if (key.startsWith('rating-')) {
+          const comicId = key.replace('rating-', '');
+          ratings[comicId] = {
+            rating: parseInt(localStorage.getItem(key)),
+            exportedDate: new Date().toISOString()
+          };
+        }
+      }
+
+      // Create CSV format
+      let csv = 'Comic ID,Rating,Date\n';
+      for (let comicId in ratings) {
+        csv += `"${comicId}",${ratings[comicId].rating},"${ratings[comicId].exportedDate}"\n`;
+      }
+
+      // Also export as JSON for backup
+      const jsonData = {
+        exportDate: new Date().toISOString(),
+        totalRatings: Object.keys(ratings).length,
+        ratings: ratings
+      };
+
+      // Download JSON
+      const jsonBlob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const jsonUrl = URL.createObjectURL(jsonBlob);
+      const jsonLink = document.createElement('a');
+      jsonLink.href = jsonUrl;
+      jsonLink.download = `ratings_export_${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(jsonLink);
+      jsonLink.click();
+      document.body.removeChild(jsonLink);
+
+      // Download CSV
+      const csvBlob = new Blob([csv], { type: 'text/csv' });
+      const csvUrl = URL.createObjectURL(csvBlob);
+      const csvLink = document.createElement('a');
+      csvLink.href = csvUrl;
+      csvLink.download = `ratings_export_${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(csvLink);
+      csvLink.click();
+      document.body.removeChild(csvLink);
+
+      const devInfo = document.getElementById('devInfo');
+      devInfo.textContent = `✅ Exported ${Object.keys(ratings).length} ratings!`;
+      setTimeout(() => {
+        devInfo.textContent = 'All data is stored in browser localStorage';
+      }, 3000);
+    });
+
+    // Export Contact Messages Function
+    document.getElementById('exportContacts').addEventListener('click', function() {
+      const contacts = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+
+      // Create CSV format
+      let csv = 'Name,Email,Message,Timestamp\n';
+      contacts.forEach(contact => {
+        csv += `"${contact.name}","${contact.email}","${contact.message.replace(/"/g, '""')}","${contact.timestamp}"\n`;
+      });
+
+      // Also export as JSON
+      const jsonData = {
+        exportDate: new Date().toISOString(),
+        totalMessages: contacts.length,
+        messages: contacts
+      };
+
+      // Download JSON
+      const jsonBlob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const jsonUrl = URL.createObjectURL(jsonBlob);
+      const jsonLink = document.createElement('a');
+      jsonLink.href = jsonUrl;
+      jsonLink.download = `contacts_export_${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(jsonLink);
+      jsonLink.click();
+      document.body.removeChild(jsonLink);
+
+      // Download CSV
+      const csvBlob = new Blob([csv], { type: 'text/csv' });
+      const csvUrl = URL.createObjectURL(csvBlob);
+      const csvLink = document.createElement('a');
+      csvLink.href = csvUrl;
+      csvLink.download = `contacts_export_${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(csvLink);
+      csvLink.click();
+      document.body.removeChild(csvLink);
+
+      const devInfo = document.getElementById('devInfo');
+      devInfo.textContent = `✅ Exported ${contacts.length} contact messages!`;
+      setTimeout(() => {
+        devInfo.textContent = 'All data is stored in browser localStorage';
+      }, 3000);
+    });
+
+    // Export Newsletter Subscribers Function
+    document.getElementById('exportSubscribers').addEventListener('click', function() {
+      const subscribers = JSON.parse(localStorage.getItem('newsletter-subscribers') || '[]');
+
+      // Create CSV format
+      let csv = 'Email,SubscribedDate\n';
+      subscribers.forEach(email => {
+        csv += `"${email}","${new Date().toISOString()}"\n`;
+      });
+
+      // Also export as JSON
+      const jsonData = {
+        exportDate: new Date().toISOString(),
+        totalSubscribers: subscribers.length,
+        subscribers: subscribers
+      };
+
+      // Download JSON
+      const jsonBlob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const jsonUrl = URL.createObjectURL(jsonBlob);
+      const jsonLink = document.createElement('a');
+      jsonLink.href = jsonUrl;
+      jsonLink.download = `subscribers_export_${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(jsonLink);
+      jsonLink.click();
+      document.body.removeChild(jsonLink);
+
+      // Download CSV
+      const csvBlob = new Blob([csv], { type: 'text/csv' });
+      const csvUrl = URL.createObjectURL(csvBlob);
+      const csvLink = document.createElement('a');
+      csvLink.href = csvUrl;
+      csvLink.download = `subscribers_export_${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(csvLink);
+      csvLink.click();
+      document.body.removeChild(csvLink);
+
+      const devInfo = document.getElementById('devInfo');
+      devInfo.textContent = `✅ Exported ${subscribers.length} subscribers!`;
+      setTimeout(() => {
+        devInfo.textContent = 'All data is stored in browser localStorage';
+      }, 3000);
+    });
+  </script>
 
 </body>
 </html>
