@@ -549,6 +549,17 @@ h2 {
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
+/* MOBILE: Back to Top Button */
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
