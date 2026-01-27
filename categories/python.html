@@ -457,10 +457,11 @@
     ];
 
     const relatedGrid = document.querySelector('.related-comics-grid');
-    const currentComics = new Set(document.querySelectorAll('.comic-card').forEach(card => {
+    const currentComics = new Set();
+    document.querySelectorAll('.comic-card').forEach(card => {
       const caption = card.querySelector('.caption').textContent;
       currentComics.add(caption);
-    }));
+    });
 
     // Show 3 random comics (excluding already displayed ones)
     const availableComics = allComics.filter(comic => !currentComics.has(comic.title));

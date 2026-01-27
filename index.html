@@ -1142,9 +1142,14 @@
   <script type="text/javascript">
     // Initialize EmailJS - Get credentials from EmailJS dashboard
     (function(){
-      emailjs.init({
-        publicKey: "WchbmTtxyDlNbn8XF"
-      });
+      try {
+        emailjs.init({
+          publicKey: "WchbmTtxyDlNbn8XF"
+        });
+        console.log('✅ EmailJS initialized successfully');
+      } catch (err) {
+        console.error('❌ EmailJS initialization error:', err);
+      }
     })();
   </script>
 
@@ -1251,8 +1256,15 @@
             total_ratings: currentCount + 1,
             timestamp: new Date().toLocaleString('en-US')
           }).then(
-            response => console.log('Rating email sent!', response),
-            error => console.log('Rating email error:', error)
+            response => {
+              console.log('✅ Rating email sent!', response);
+              alert('Rating submitted & email sent!');
+            },
+            error => {
+              console.error('❌ Rating email error:', error);
+              console.error('Error details:', JSON.stringify(error));
+              alert('Rating saved but email failed. Check console.');
+            }
           );
         });
         
@@ -1405,8 +1417,11 @@
           timestamp: new Date().toLocaleString('en-US'),
           message: 'New newsletter subscriber!'
         }).then(
-          response => console.log('Newsletter email sent!', response),
-          error => console.log('Newsletter email error:', error)
+          response => console.log('✅ Newsletter email sent!', response),
+          error => {
+            console.error('❌ Newsletter email error:', error);
+            console.error('Error details:', JSON.stringify(error));
+          }
         );
         
         emailInput.value = '';
@@ -1512,8 +1527,11 @@
         message: message,
         timestamp: new Date().toLocaleString('en-US')
       }).then(
-        response => console.log('Contact email sent!', response),
-        error => console.log('Contact email error:', error)
+        response => console.log('✅ Contact email sent!', response),
+        error => {
+          console.error('❌ Contact email error:', error);
+          console.error('Error details:', JSON.stringify(error));
+        }
       );
       
       // Show success message
