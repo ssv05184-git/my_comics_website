@@ -1140,17 +1140,29 @@
   <!-- EmailJS Library for Email Notifications -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
   <script type="text/javascript">
-    // Initialize EmailJS - Get credentials from EmailJS dashboard
-    (function(){
-      try {
-        emailjs.init({
-          publicKey: "WchbmTtxyDlNbn8XF"
-        });
-        console.log('✅ EmailJS initialized successfully');
-      } catch (err) {
-        console.error('❌ EmailJS initialization error:', err);
+    // Initialize EmailJS - Wait for library to load
+    function initializeEmailJS() {
+      if (typeof emailjs !== 'undefined') {
+        try {
+          emailjs.init({
+            publicKey: "WchbmTtxyDlNbn8XF"
+          });
+          console.log('✅ EmailJS initialized successfully');
+        } catch (err) {
+          console.error('❌ EmailJS initialization error:', err);
+        }
+      } else {
+        console.warn('⏳ EmailJS library not loaded yet, retrying...');
+        setTimeout(initializeEmailJS, 500);
       }
-    })();
+    }
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeEmailJS);
+    } else {
+      initializeEmailJS();
+    }
   </script>
 
   <!-- Search and Filter Script -->
