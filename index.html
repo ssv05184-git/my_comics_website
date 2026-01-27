@@ -1244,7 +1244,7 @@
           ratingCount.textContent = `(${currentCount + 1})`;
           
           // Send email notification about new rating
-          emailjs.send('service_comics', 'template_rating', {
+          emailjs.send('service_comics', 'template_notification', {
             to_email: 'srijuvenkat1495@gmail.com',
             comic_id: comicId,
             rating: rating,
@@ -1399,7 +1399,7 @@
         messageDiv.textContent = '✅ Thanks for subscribing! You\'ll be notified of new comics.';
         
         // Send email notification about new subscription
-        emailjs.send('service_comics', 'template_newsletter', {
+        emailjs.send('service_comics', 'template_notification', {
           to_email: 'srijuvenkat1495@gmail.com',
           subscriber_email: email,
           timestamp: new Date().toLocaleString('en-US'),
@@ -1505,7 +1505,7 @@
       localStorage.setItem('contactMessages', JSON.stringify(contacts));
       
       // Send email notification about new contact message
-      emailjs.send('service_comics', 'template_contact', {
+      emailjs.send('service_comics', 'template_notification', {
         to_email: 'srijuvenkat1495@gmail.com',
         from_name: name,
         from_email: email,
