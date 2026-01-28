@@ -552,11 +552,7 @@ h2 {
 /* MOBILE: Back to Top Button */
 @media (max-width: 480px) {
   .back-to-top {
-    bottom: 20px;
-    right: 15px;
-    width: 45px;
-    height: 45px;
-    font-size: 1.2rem;
+    display: none !important;
   }
 }
 
@@ -680,6 +676,45 @@ h2 {
   box-shadow: 0 6px 12px rgba(74, 144, 226, 0.3);
 }
 
+/* MOBILE: Hero Section */
+@media (max-width: 480px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .hero-metadata {
+    justify-content: center;
+  }
+
+  .editor-badge {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+
+  .hero-cta {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* ----------------------------------------------------------
    COMIC METADATA TAGS
 ----------------------------------------------------------- */
@@ -769,7 +804,7 @@ h2 {
 
 .date {
   font-size: 0.75rem;
-  color: #999;
+  color: orangered;
   font-weight: 600;
 }
 
@@ -1280,6 +1315,18 @@ body:has(h1:contains("Cultural")) .comic-card:hover {
   box-shadow: 0 6px 12px rgba(74, 144, 226, 0.3);
 }
 
+/* MOBILE: Newsletter Form */
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+  }
+}
+
 .newsletter-message {
   font-size: 0.9rem;
   font-weight: 600;
@@ -1548,7 +1595,7 @@ body:has(h1:contains("Cultural")) .comic-card:hover {
 
 .form-submit {
   padding: 12px 24px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: black;
   color: white;
   border: none;
   border-radius: 8px;
@@ -1556,7 +1603,7 @@ body:has(h1:contains("Cultural")) .comic-card:hover {
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .form-submit:hover {
