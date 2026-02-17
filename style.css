@@ -864,6 +864,61 @@ h2 {
 }
 
 /* ----------------------------------------------------------
+   NEW BADGE
+----------------------------------------------------------- */
+
+.badge-new {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(45deg, #ffdd33 0%, #ffef9f 100%);
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 50% 50% 50% 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+  font-family: 'Fredoka One', 'Arial Black', sans-serif;
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,0.25),
+    0 0 0 4px white,
+    0 0 0 6px #ffdd33,
+    inset -2px -2px 0 rgba(0,0,0,0.1);
+  z-index: 10;
+  animation: comic-bounce 0.6s ease-in-out infinite;
+  transform: rotate(15deg);
+  border: 3px solid #000;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+@keyframes comic-bounce {
+  0%, 100% {
+    transform: rotate(15deg) translateY(0) scale(1);
+  }
+  25% {
+    transform: rotate(15deg) translateY(-4px) scale(1.05);
+  }
+  50% {
+    transform: rotate(15deg) translateY(-8px) scale(1.08);
+  }
+  75% {
+    transform: rotate(15deg) translateY(-4px) scale(1.05);
+  }
+}
+
+.badge-new::before {
+  content: '💥';
+  margin-right: 5px;
+  display: inline-block;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ----------------------------------------------------------
    FOOTER
 ----------------------------------------------------------- */
 

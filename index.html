@@ -17,6 +17,7 @@
   
   <title>My Comics Website - Python, ML, LLM & Story Comics</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="badges.js"></script>
 
   <!-- ----------------- COUNTER.DEV TELEMETRY ----------------- -->
   <!-- Replace YOUR-COUNTER-ID with your actual counter.dev ID -->
@@ -1676,14 +1677,36 @@
 
     // Filter functionality
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const latestComics = Array.from(comicCards).slice(0, 9); // First 9 as "latest"
     const featuredComics = [0, 4, 8, 12, 16, 20]; // Featured indices
+
+    // Function to parse date string (e.g., "14 Jan 2026") and return Date object
+    function parseDate(dateStr) {
+      return new Date(dateStr.trim());
+    }
+
+    // Get latest 5 comics sorted by date
+    function getLatestComics() {
+      const comicsWithDates = Array.from(comicCards).map((card, index) => {
+        const dateElement = card.querySelector('.date');
+        const dateStr = dateElement ? dateElement.textContent.trim() : '';
+        const date = parseDate(dateStr);
+        return { card: card, date: date, index: index };
+      });
+      
+      // Sort by date descending (latest first)
+      comicsWithDates.sort((a, b) => b.date - a.date);
+      
+      // Return top 5
+      return comicsWithDates.slice(0, 5).map(item => item.card);
+    }
 
     filterBtns.forEach(btn => {
       btn.addEventListener('click', function() {
         const filter = this.getAttribute('data-filter');
         filterBtns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
+
+        const latestComics = getLatestComics();
 
         comicCards.forEach((card, index) => {
           card.style.display = '';
